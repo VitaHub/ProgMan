@@ -243,3 +243,15 @@ What can we generalize so far?
 - Data can be displayed in the view using ERB web templating.
 - Data can be saved into the database using a web form.
 
+Confirm that your email saved to the database. The Rails console is a useful tool to interact with Rails apps. We'll use it here to query the database.
+
+In the terminal, open a new tab by clicking the 
+Switch into your app's folder by typing cd innovation-cloud
+Start the Rails console by running
+$ rails console
+When you enter the Rails console, retrieve all emails in the database by running the query
+> Signup.all
+This query returns all emails in the database as an array. Your email should show up in the console output. 
+
+To exit the Rails console at any point, type Ctrl+D.
+
